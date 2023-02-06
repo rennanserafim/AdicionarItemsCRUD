@@ -6,42 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<h1>Adicionar Produtos</h1>
+<h1 class="titleAddProdutos">Adicionar Produtos</h1>
 <body>
-    <span id="validacao"></span>
+
     <form id="form">
-        
+        <span id="validacao"></span>
             <label>Produto:
-                <input id="produto">
+                <input class="formItem" id="produto">
             </label>
             <label>Valor:
-                <input id="valor">
+                <input class="formItem" id="valor">
             </label>
             <label>Quantidade:
-                <input id="quantidade">
+                <input class="formItem" id="quantidade">
             </label>
-            <button id="btnAdd" type="submit">Adicionar</button>       
+            <button class="formItem" id="btnAdd" type="submit">Adicionar</button>       
     </form>
 
-    <table>
+    <table id="cabecalhoTop">
+        <div>
         <thead>
+           
             <tr>
-                <td>Id</td>
-                <td>Produto</td>
-                <td>Valor</td>
-                <td>Unidade</td>
-                <td>Editar</td>
-                <td>Deletar</td>
+                <td class="cabecalho">Id</td>
+                <td class="cabecalho">Produto</td>
+                <td class="cabecalho">Valor</td>
+                <td class="cabecalho">Unidade</td>
+                <td class="cabecalho">Editar</td>
+                <td class="cabecalho">Deletar</td>
             </tr>
+        
         </thead>
-        <tbody>
+    </div>
+        <tbody id="tbody">
 
         </tbody>
+        
     </table>
+    
+    <div class="btnClearAll">
     <button id="limparTodos" type="submit">Clear all</button>    
-
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>

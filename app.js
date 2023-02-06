@@ -43,8 +43,8 @@ function adicionarItem(e){
         <td>${produtoValue}</td>
         <td>${valorValue}</td>
         <td>${quantidadeValue}</td>
-        <td><button class="fa-solid fa-pen-to-square"></button></td>
-        <td><button class="fa-solid fa-trash"></button></td>
+        <td><i class="fa-solid fa-pen-to-square"></i></td>
+        <td><i class="fa-solid fa-trash"></i></td>
         `
         lista.appendChild(criarTr)
         validacaoAlert("ItemAdicionado","success")
@@ -149,6 +149,7 @@ function padrao(){
     produto.value = ""
     valor.value = ""
     quantidade.value = ""
+    btnAdd.textContent = "Adicionar"
 
 }
 

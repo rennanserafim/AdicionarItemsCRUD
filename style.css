@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+
+*{
+    margin: 0;
+}
+
+:root{
+    --primary-color: #8a7567;
+    --secondary-color: #8a6789;
+    --font: 'Roboto', sans-serif;
+    --font-Weight-light: 300;
+    --font-Weight-normal: 400;
+    --font-Weight-bold: 900;
+    --grey-1: #e4e3e3;
+    --radius-normal: 0.5rem;
+
+
+}
+
+
+body{
+    font-family: var(--font);
+}
+
+h1{
+    margin: 2em auto;
+    text-align: center;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+}
+
+input{
+    background: transparent;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 1.2rem;
+    border-bottom: 0.25rem solid #66584e;
+    color: #201c19;;
+}
+
+#form{
+    text-align: center;
+    background:#8a7567;
+    font-size: var(--font-Weight-bold);
+    margin: auto; 
+    padding: 3rem; 
+    color: var(--grey-1);
+    font-weight: var(--font-Weight-normal);
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 0;
+
+ 
+}
+#validacao{
+    position: relative;
+    display: grid; 
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    z-index: 1;
+
+}
+
+
+
+
+.cabecalho{
+    font-weight: var(--font-Weight-bold);
+    font-size: 1.75rem;
+    padding: 2rem;
+    text-align: center;
+    color: var(--grey-1);
+}
+
+.itemAdded{
+    font-weight: var(--font-Weight-normal);
+    font-size: 1.25rem;
+    padding: 2rem;
+    text-align: center;
+    border: none;
+}
+
+.titleAddProdutos{
+    background: #66584e;
+    margin: 0;
+    padding: 2rem;
+    color: var(--grey-1);
+}
+
+label{
+    padding: 1.5rem;
+}
+
+button{
+    padding: 0.5rem;
+    border-radius:var(--radius-normal) ;
+    background:var(--primary-color);
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--grey-1);
+    font-weight: bold;
+    font-size: 1.10rem;
+    border-color: var(--grey-1);
+
+
+}
+button:hover{
+   background:  #66584e;
+   transition: 1s;
+   cursor: pointer;
+
+
+
+} 
+
+ #limparTodos{
+    display: block;
+    margin: 2em auto;
+    text-align: center;
+}
+
+
+#cabecalhoTop{
+    background-color: #66584e;
+    width: 100%;
+    height: 100px;    
+}
+
+#tbody{
+    background:var(--grey-1);
+
+
+}
+
+i{
+   color: var(--primary-color);
+   padding: 1.5rem;
+}
+
+i:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.5s;
+   
+}
+
